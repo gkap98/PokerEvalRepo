@@ -73,5 +73,14 @@ TEST_CASE("Test Deck") {
 		}
 		REQUIRE(counter == 52);
 	}
-	
+//	SECTION("Test Shuffle") {
+//		Deck d;
+//		Deck e;
+//		REQUIRE(d.getDeck() != e.shuffleDeck());
+//	}
+	SECTION("Test Get Deck") {
+		Deck d;
+		REQUIRE(d.getDeck().size() == 52);
+	}
+
 }

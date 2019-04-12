@@ -82,5 +82,10 @@ TEST_CASE("Test Deck") {
 		Deck d;
 		REQUIRE(d.getDeck().size() == 52);
 	}
-
+	SECTION("Test Deal Cards") {
+		Deck d;
+		vector<Card> Hand;
+		d.dealCards(7, Hand);
+		REQUIRE(Hand.size() == 7);
+	}
 }

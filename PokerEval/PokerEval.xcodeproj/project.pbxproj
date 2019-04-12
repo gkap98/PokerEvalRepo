@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F9D823E2226154B7007F1A51 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D823E1226154B7007F1A51 /* main.cpp */; };
 		F9D823EA2261554F007F1A51 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D823E92261554F007F1A51 /* Card.cpp */; };
+		F9D823EF22615714007F1A51 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9D823ED22615714007F1A51 /* Deck.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		F9D823E822615548007F1A51 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		F9D823E92261554F007F1A51 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
 		F9D823EB22615581007F1A51 /* catch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = "<group>"; };
+		F9D823ED22615714007F1A51 /* Deck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		F9D823EE22615714007F1A51 /* Deck.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deck.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				F9D823E1226154B7007F1A51 /* main.cpp */,
 				F9D823E92261554F007F1A51 /* Card.cpp */,
 				F9D823E822615548007F1A51 /* Card.h */,
+				F9D823ED22615714007F1A51 /* Deck.cpp */,
+				F9D823EE22615714007F1A51 /* Deck.hpp */,
 				F9D823EB22615581007F1A51 /* catch.hpp */,
 			);
 			path = PokerEval;
@@ -125,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D823EF22615714007F1A51 /* Deck.cpp in Sources */,
 				F9D823E2226154B7007F1A51 /* main.cpp in Sources */,
 				F9D823EA2261554F007F1A51 /* Card.cpp in Sources */,
 			);

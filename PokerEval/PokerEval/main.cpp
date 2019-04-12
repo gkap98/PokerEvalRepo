@@ -12,6 +12,7 @@ using namespace std;
 #define CATCH_CONFIG_RUNNER
 #include "catch.hpp"
 #include "Card.h"
+#include "Deck.hpp"
 
 int main()
 {
@@ -62,4 +63,15 @@ TEST_CASE("Test Cards")
 		REQUIRE(c2.toString() == "10 of Hearts");
 		REQUIRE(c3.toString() == "Ace of Spades");
 	}
+}
+TEST_CASE("Test Deck") {
+	SECTION("Test Create Deck") {
+		Deck d;
+		int counter = 0;
+		for(int i = 0; i < d.getDeck().size(); i++) {
+			counter++;
+		}
+		REQUIRE(counter == 52);
+	}
+	
 }

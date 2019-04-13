@@ -29,11 +29,12 @@ Deck::Deck() {
 }
 
 vector<Card> Deck::shuffleDeck() {
-	vector<Card> newDeck;
-	for(int i = newDeck.size(); i > 0; i--) {
-		int position = rand() % i;
-		newDeck.push_back(deck.at(position));
-		deck.erase(deck.begin() + position);
+	vector<Card> newDeck = deck;
+	for(size_t i = 0; i < newDeck.size(); i++) {
+		size_t position = rand() % 52;
+		Card t = newDeck[i];
+		newDeck[i] = newDeck[position];
+		newDeck[position] = t;
 	}
 	deck = newDeck;
 	return deck;

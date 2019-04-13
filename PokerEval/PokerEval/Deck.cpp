@@ -30,7 +30,7 @@ Deck::Deck() {
 
 vector<Card> Deck::shuffleDeck() {
 	vector<Card> newDeck;
-	for(unsigned long i = newDeck.size(); i > 0; i--) {
+	for(int i = newDeck.size(); i > 0; i--) {
 		int position = rand() % i;
 		newDeck.push_back(deck.at(position));
 		deck.erase(deck.begin() + position);

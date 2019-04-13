@@ -76,7 +76,15 @@ TEST_CASE("Test Deck") {
 //	SECTION("Test Shuffle") {
 //		Deck d;
 //		Deck e;
-//		REQUIRE(d.getDeck() != e.shuffleDeck());
+//		e.shuffleDeck();
+//		vector<Card> deck1 = d.getDeck();
+//		vector<Card> deck2 = d.getDeck();
+//
+//		for(int i = 0; i < d.getDeck().size(); i++) {
+//			for(int j = 0; j < e.getDeck().size(); j++) {
+//				
+//			}
+//		}
 //	}
 	SECTION("Test Get Deck") {
 		Deck d;
